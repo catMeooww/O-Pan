@@ -1,0 +1,31 @@
+
+#notifications{
+    width:90%;
+    border-style: solid;
+    border-width: 1px;
+    background-color: rgb(219, 219, 15);
+    border-color: rgb(216, 90, 6);
+    font-size:15px;
+    color: rgb(216, 90, 6);
+    border-radius: 10px;
+}
+.collapsers{
+    padding: 10px;
+    background:linear-gradient(red 100%,blue 0%);
+    color:white;
+    border-width:2px;
+    border-style: solid;
+    border-color:cyan;
+    width:90%;
+}
+.problemas p{
+    border-width: 1px;
+    border-style: solid;
+    padding: 10px;
+}
+.problemas{
+    border-width:2px;
+    border-style: solid;
+    border-color:cyan;
+    width:90%;
+}

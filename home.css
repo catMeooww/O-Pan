@@ -1,0 +1,14 @@
+body{
+    text-align: center;
+}
+nav img {
+    width: 100px;
+    height: 40px;
+}
+
+#jornal {
+    padding: 20px;
+    border-width: 2px;
+    border-style: double;
+    border-color: linear-gradient(#1414ad 0%, #df0b0b 100%);
+}
