@@ -1,0 +1,133 @@
+<html>
+
+<head>
+    <title>O PAN: Gincopan 2024</title>
+    <style>
+        body {
+            background-size: cover;
+            background-repeat: repeat-y;
+        }
+
+        #header {
+            background-color: rgb(31, 31, 31);
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            border-bottom: black ridge 5px;
+            color: aliceblue;
+        }
+
+        #body {
+            margin-top: 230px;
+            width: 80%;
+            background-color: rgba(0, 0, 0, 0.700);
+            border: outset 5px rgba(0, 0, 0, 0.500);
+            color: white;
+        }
+
+        .scoreDiv {
+            width: 40%;
+            text-align: left;
+        }
+
+        .scoreHandler,
+        .score {
+            height: 20px;
+        }
+
+        .scoreHandler {
+            background-color: gray;
+            width: 100%;
+        }
+
+        #azurelo {
+            background: linear-gradient(blue 30%, yellow 100%);
+            width: 0%;
+        }
+
+        #verde {
+            background-color: green;
+            width: 0%;
+        }
+
+        #branca {
+            background-color: white;
+            width: 0%;
+        }
+
+        label {
+            float: left;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body background="forest.jpg" onload="loadScores(50,20,80)">
+    <div id="header">
+        <a href="index.html">RETURN</a>
+        <center>
+            <img src="Logo.Pan.png" width="20%">
+            <p>Gincopan 2024</p>
+        </center>
+    </div>
+    <center>
+        <div id="body">
+            <h1>EQUIPES</h1>
+            <br>
+            <div>
+                <label>AZURELO</label>
+                <div class="scoreDiv">
+                    <div class="scoreHandler">
+                        <div id="azurelo" class="score"></div>
+                    </div>
+                    <label id="azureloNumber"></label>
+                </div>
+            </div>
+            <br><br>
+            <div>
+                <label>VERDE</label>
+                <div class="scoreDiv">
+                    <div class="scoreHandler">
+                        <div id="verde" class="score"></div>
+                    </div>
+                    <label id="verdeNumber"></label>
+                </div>
+            </div>
+            <br><br>
+            <div>
+                <label>BRANCA</label>
+                <div class="scoreDiv">
+                    <div class="scoreHandler">
+                        <div id="branca" class="score"></div>
+                    </div>
+                    <label id="brancaNumber"></label>
+                </div>
+            </div>
+            <br><br>
+            <h1>Sobre a Gincopan</h1>
+            <p>Gincopan é uma gincana que acontece anualmente no Colégio Panamericano, apresentando 3 equipes. Cada
+                equipe deve se ajudar para poder passar nas provas e assim ganhar pontos.</p>
+            <br><br>
+            <h1>Provas</h1>
+            <ul style="text-align: left;margin-left: 300px;">
+                <li>Grito de Guerra</li>
+                <li>Festa Junina</li>
+                <li>Caça ao tesouro</li>
+            </ul>
+        </div>
+        <br><br>
+    </center>
+    <script>
+        function loadScores(azurelo, verde, branca) {
+            document.getElementById("azurelo").style.width = String(azurelo) + "%";
+            document.getElementById("verde").style.width = String(verde) + "%";
+            document.getElementById("branca").style.width = String(branca) + "%";
+            document.getElementById("azureloNumber").innerHTML = String(azurelo) + "%";
+            document.getElementById("verdeNumber").innerHTML = String(verde) + "%";
+            document.getElementById("brancaNumber").innerHTML = String(branca) + "%";
+        }
+    </script>
+</body>
+
+</html>

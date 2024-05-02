@@ -1,37 +1,37 @@
 <html>
-    <head>
-        <title>jornal O PAN</title>
-        <link rel="stylesheet" href="home.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    </head>
-    
-    <body>
-        <nav class="navbar-inverse myNavbar">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#"><img src="Logo.Pan.png" id="logo"></a>
-            </div>
-    
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                    <br>
 
-                    
-                    <li><a class="options_pan" href="#jornal">Histórico de trabalhos</a></li>
+<head>
+    <title>jornal O PAN</title>
+    <link rel="stylesheet" href="home.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
 
+<body>
+    <nav class="navbar-inverse myNavbar"
+        style="position: fixed;top: 0px;left: 0px;width: 100%;border-bottom: solid 2px gray;">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="Logo.Pan.png" id="logo"></a>
+        </div>
 
-
-                    <li><a class="options_pan" href="contato.html">Contato</a></li>
-                </ul>
-            </div>
-        </nav>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <br>
+                <li><a class="options_pan" href="#jornal">Histórico de trabalhos</a></li>
+                <li><a class="options_pan" href="contato.html">Contato</a></li>
+                <li><a class="options_pan" href="gincopan.html">Gincopan</a></li>
+            </ul>
+            <button style="float: right;" onclick="location.reload()">Reload</button>
+        </div>
+    </nav>
+    <div style="margin-top: 100px;">
         <h1><b>O Pan</b></h1>
         <h4 class="text-capitalize">Trabalhos do colégio panamericano</h4>
         <img src="Logo.Pan.png" width="20%">
@@ -43,10 +43,26 @@
             <br>
             <div class="trabalhos">Trabalho de Maker <br> <a href="projeto_maker.html">Os problemas do colégio</a></div>
             <br>
-            <div class="trabalhos">Trabalho de Filosofia <br> <a href="cartaz_filosofia.html">O diálogo precisa continuar</a></div>
+            <div class="trabalhos">Trabalho de Filosofia <br> <a href="cartaz_filosofia.html">O diálogo precisa
+                    continuar</a></div>
             <br>
-            <div class="trabalhos">Trabalho de Português <br> <a href="Jornal_Parana.html">Jornal Olhar Paranaense</a></div>
+            <div class="trabalhos">Trabalho de Português <br> <a href="Jornal_Parana.html">Jornal Olhar Paranaense</a>
+            </div>
+            <br>
+            <div class="trabalhos">English Project <br> <a href="EnglishAD.html">Concientization Advertisement</a>
+            </div>
             <br>
         </section>
-    </body>
+    </div>
+    <script>
+        var worksInPage = document.getElementsByClassName("trabalhos");
+        for(i = 0;i < worksInPage.length;i++){
+            r = Math.floor(Math.random() *255);
+            g = Math.floor(Math.random() *255);
+            b = Math.floor(Math.random() *255);
+            worksInPage.item(i).style.borderColor = "rgb("+r+","+g+","+b+")";
+        }
+    </script>
+</body>
+
 </html>
