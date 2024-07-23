@@ -1,0 +1,119 @@
+<html>
+
+<head>
+    <title>O PAN: Jornal do Paraná</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        #header {
+            position: fixed;
+            top: 0%;
+            left: 0%;
+            background-color: blue;
+            color: aliceblue;
+            width: 100%;
+            border-bottom: outset 4px darkblue;
+        }
+
+        #header h1 {
+            text-decoration: underline;
+            text-shadow: 2px 2px 1px goldenrod;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        #Text {
+            background-color: darkslategray;
+            color: aliceblue;
+            border: inset 4px gray;
+            width: 70%;
+            height: 70%;
+            overflow-y: scroll;
+        }
+
+        .paragraph {
+            text-align: justify;
+            text-rendering: optimizeLegibility;
+            margin: 1%;
+        }
+
+        .spacing {
+            margin-left: 5%;
+            color: rgba(238, 130, 238, 0.040);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <a href="index.html">Voltar a página inicial</a> <span>Por: Guilherme Bueno Salviano de Albuquerque</span>
+        <hr>
+        <h1>Manifesto em prol da Civilização - Produção 1</h1>
+        <br>
+    </div>
+    <div id="separation"><br><br><br><br><br><br><br></div>
+    <center>
+        <div id="Text">
+            <h2>Manifesto da Sociedade</h2>
+            <hr>
+            <br><br>
+            <p class="paragraph">
+                <b class="spacing">I</b>
+                Ainda nos dias atuais, conseguimos ver diversos problemas sociais, coisas que já deveriam ter sido
+                resolvidas há muito tempo. Muitas dessas coisas não são dificeis de se ver, como a fome, miséria, entre
+                outros. Esses já não deveriam existir, considerando que na constituição fala que temos direito a
+                moradia, saúde, cesta básica e até a saneamento básico, que mesmo em uma sociedade tecnológica, ainda
+                não é disponível a todos.
+            </p>
+            <p class="paragraph">
+                <b class="spacing">D</b>
+                Muitas dessas pessoas que estão em situação de miséria acabam em problemas muito maiores como crimes
+                ou o uso de substâncias ilícitas, o que gera ainda mais problemas na sociedade em geral.
+            </p>
+            <p class="paragraph">
+                <b class="spacing">D</b>
+                A culpa de tudo isso, não é de uma pessoa específica ou um grupo de pessoas, mas sim da falta de
+                investimento por parte do governo em educação, infraestrutura, possibilidades de emprego e outras areas
+                importantes para o desenvolvimento de uma sociedade. O problema é que os políticos não ligam realmente
+                para o bem estar da população, mas sim para o próprio bem estar, sendo assim, boa parte do dinheiro do
+                imposto (que não é pouca coisa), não é retornado ao povo, o que causa essas desigualdades, porque muitos
+                dependem de serviços do estado para sobreviverem.
+            </p>
+            <p class="paragraph">
+                <b class="spacing">D</b>
+                Temos que considerar também que as pessoas não são iguais, isso significa que há pessoas que buscam
+                mudar de vida, essas merecem o apoio da sociedade, porém há outros que preferem viver no crime, pois
+                muitas vezes, no Brasil e no mundo, compensa.
+            </p>
+            <p class="paragraph">
+                <b class="spacing">T</b>
+                No final de tudo, sempre temos que tratar as pessoas com respeito, idependente se é rica ou pobre. Além
+                de, também, termos conciência de que os problemas das pessoas mais pobres, na maioria das vezes
+                também nos afeta, todos nós precisamos de cidades com maior infraestrutura, com menos crimes, mais
+                limpa... Resolver esses problemas é melhor para todos.
+            </p>
+            <p class="paragraph">
+                <b class="spacing">C</b>
+                Sendo assim, devemos, como cidadãos, brigar pelos nossos direitos, melhor saúde, melhor educação,
+                saneamento básico e infraestrutura, além de que, como parte dessa sociedade, temos que preservar-la
+                também. Esses problemas são de todos que compõem a humanidade, resolver-los deveria ser nosso foco.
+            </p>
+        </div>
+        <b class="spacing">I-Introdução | D-Desenvolvimento | T-Tese | C-Conclusão</b>
+    </center>
+    <script>
+        var testMobile = /iPhone|Android|iPad/i.test(navigator.userAgent)
+        if (testMobile) {
+            document.getElementById("header").innerHTML = "Aluno: Guilherme | 15";
+            document.getElementById("header").style.height = "4%";
+            document.getElementById("header").style.fontSize = "65px";
+            document.getElementById("separation").innerHTML = "<br>";
+            document.getElementById("Text").style.width = "100%";
+            document.getElementById("Text").style.height = "96%";
+        }
+    </script>
+</body>
+
+</html>
